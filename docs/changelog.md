@@ -4,3 +4,4 @@
 
 ### New
 
+* Initial support for understanding CSS colors.
