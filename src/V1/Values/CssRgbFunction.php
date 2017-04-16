@@ -43,7 +43,7 @@
 
 namespace GanbaroDigital\CssParser\V1\Values;
 
-class CssRgbFunction extends CssValue
+class CssRgbFunction extends CssValue implements CssColor
 {
     protected $red;
     protected $green;
@@ -56,6 +56,16 @@ class CssRgbFunction extends CssValue
         $this->green = $green;
         $this->blue = $blue;
         $this->alpha = $alpha;
+    }
+
+    public function getSRGB()
+    {
+        return [
+            $this->red,
+            $this->green,
+            $this->blue,
+            $this->alpha,
+        ];
     }
 
     /**

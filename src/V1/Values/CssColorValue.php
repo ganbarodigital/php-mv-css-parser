@@ -45,7 +45,7 @@ namespace GanbaroDigital\CssParser\V1\Values;
 
 use GanbaroDigital\CssParser\V1\Checks\IsShortColorValue;
 
-class CssColorValue extends CssValue
+class CssColorValue extends CssValue implements CssColor
 {
     protected $red;
     protected $green;

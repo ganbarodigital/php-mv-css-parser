@@ -45,7 +45,7 @@ namespace GanbaroDigital\CssParser\V1\Values;
 
 use GanbaroDigital\CssParser\V1\Maps\CssColorKeywords;
 
-class CssNamedColor extends CssColorValue
+class CssNamedColor extends CssColorValue implements CssColor
 {
     protected $name;
 
