@@ -70,7 +70,7 @@ class BuildCssColorValue
         $matches = ApplyGrammar::to($language, 'colorValue', $color, 'color', new WhitespaceAdjuster);
 
         if ($matches['matched']) {
-            return $matches['matched']->evaluate();
+            return $matches['value']->evaluate();
         }
 
         // we do not understand what we are looking at
